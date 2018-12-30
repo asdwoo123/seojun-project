@@ -18,9 +18,11 @@ class SignalLight extends Component {
                 break;
         }
 
+        let itemName = this.props.item.slice(-2)
+
        return (
             <View style={containerStyles.container4}>
-                <Text style={dataStyles.contentText}>{this.props.item}</Text>
+                <Text style={dataStyles.contentText}>{itemName}</Text>
                 <View style={[dataStyles.lightView, { backgroundColor: lightColor
                 }]} />
             </View>

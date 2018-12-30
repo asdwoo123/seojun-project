@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text} from "react-native";
 import containerStyles from "../styles/containerStyles";
-import PageOneLayout1 from "../navigate/PageOne";
 import PageOneLayout1 from '../components/PageOneLayout1';
 import PageOneLayout2 from '../components/PageOneLayout2';
 import PageOneLayout3 from '../components/PageOneLayout3';

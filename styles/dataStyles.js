@@ -12,8 +12,9 @@ const dataStyles = StyleSheet.create({
         borderBottomWidth: 2
     },
     title: {
-
-    },
+        fontSize: 12
+    }
+    ,
     lightView: {
         flex: 2,
         borderColor: '#BDBDBD',

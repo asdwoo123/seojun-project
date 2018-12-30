@@ -95,7 +95,7 @@ const initialState = {
     C_Total: '0',
     uliPC_Schift_OK: '0',
     uliPC_Schift_NOK: '0',
-    isReady: false
+    isReady: true
 }
 
 export default handleActions({
