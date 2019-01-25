@@ -31,8 +31,8 @@ const getIsReady = createAction(isReady);
 
 export function socketDataLoad() {
     return (dispatch) => {
-        this.socketOnStart('http://14.37.152.122:3000', dispatch);
-        this.socketOnStart('http://192.168.0.118:3000', dispatch);
+        socketOnStart('http://14.37.152.122:3000', dispatch);
+        socketOnStart('http://192.168.0.118:3000', dispatch);
     }
 }
 

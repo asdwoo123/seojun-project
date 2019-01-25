@@ -1,14 +1,25 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer, createDrawerNavigator } from 'react-navigation';
 import React from 'react';
-import pageOne from './PageOne';
-import HeaderMenu from "../components/sub_components/HeaderMenu";
+import MainScreen from "../components/MainScreen";
+import AlarmOverview from "../components/AlarmOverview";
+import Statistic from "../components/Statistic";
+import MainTenance from "../components/MainTenance";
+import PokaYoke from "../components/PokaYoke";
+import ManualMode from "../components/ManualMode";
+import IpSettings from "../components/IpSettings";
 
-const AppNavigator = createStackNavigator(
+
+const AppNavigator = createDrawerNavigator(
     {
-       One: pageOne
+       Main: MainScreen,
+       Alarm: AlarmOverview,
+       Statis: Statistic,
+       Poka: PokaYoke,
+       tenan: MainTenance,
+       Manual: ManualMode,
+       IP: IpSettings
     },
     {
-       initalRouteName: 'One',
         defaultNavigationOptions: {
            headerStyle: {
                backgroundColor: '#3f51b5',
@@ -18,15 +29,15 @@ const AppNavigator = createStackNavigator(
             headerTitleStyle: {
                 left: 10
             },
-            headerTintColor: '#fff',
-            headerRight: (
-                <HeaderMenu />
-            )
+            headerTintColor: '#fff'
         }
     }
 );
 
 export default createAppContainer(AppNavigator);
+
+
+
 
 
 

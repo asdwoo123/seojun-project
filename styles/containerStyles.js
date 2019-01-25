@@ -3,13 +3,11 @@ import { StyleSheet } from 'react-native';
 const containerStyles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-around',
-        backgroundColor: 'rgb(246, 247, 249)'
+        backgroundColor: '#F3F3F3',
+        alignItems: 'center',
     },
     container2: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between'
+        width: '90%'
     },
     container3: {
         flex: 0.6,

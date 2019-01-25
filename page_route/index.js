@@ -1,20 +1,14 @@
 import React from 'react';
 import {View, Text} from "react-native";
 import containerStyles from "../styles/containerStyles";
-import PageOneLayout1 from '../components/PageOneLayout1';
-import PageOneLayout2 from '../components/PageOneLayout2';
-import PageOneLayout3 from '../components/PageOneLayout3';
 import {connect} from "react-redux";
 
 const FirstRoute = (props) => (
     <View style={containerStyles.container}>
-        <PageOneLayout1 {...props} />
-        <PageOneLayout2 {...props} />
-        <PageOneLayout3 {...props} />
     </View>
 );
 
-export const FirstRouteComponent = connect(
+export default connect(
     (state) => ({
         TurkSignalLight_GREEN: state.opc.TurkSignalLight_GREEN,
         TurkSignalLight_RED: state.opc.TurkSignalLight_RED,
@@ -31,11 +25,3 @@ export const FirstRouteComponent = connect(
         isReady: state.opc.isReady
     })
 )(FirstRoute);
-
-export const SecondRoute = () => (
-    <View style={[containerStyles.container, { justifyContent: 'center', alignItems: 'center' }]}><Text>장비수치 2</Text></View>
-);
-
-export const ThirdRoute = () => (
-    <View style={[containerStyles.container,  { justifyContent: 'center', alignItems: 'center' }]}><Text>장비제어</Text></View>
-)
